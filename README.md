@@ -3,6 +3,10 @@ Branch voltada para a seção 02: Fundamentos React.
 
 # Anotações
 
+## ATENÇÃO!!!
+
+* **Para o arquivo Markdown não entender as anotações HTML como tags HTML, os nomes das tags estão escritas entre aspas simples.**
+
 ### Aula 06 - Introdução do Módulo
 
 ### Aula 07 - Criando Projeto
@@ -26,7 +30,7 @@ Branch voltada para a seção 02: Fundamentos React.
 * A partir da sintaxe JSX é possível simular um elemento HTML no JavaScript
 * É necessário importar o react: import React from 'react'
 * Exemplo:
-    * const strongString = <[tag:strong]>Olá React!!!</strong>
+    * const strongString = <'strong'>Olá React!!!</'strong'>
 
 ### Aula 10 - Carregando CSS
 
@@ -40,9 +44,9 @@ Branch voltada para a seção 02: Fundamentos React.
 * Exemplo:
     * import Primeiro from './components/basicos/Primeiro'
     * ReactDOM.render(
-        <div>
-            <Primeiro></Primeiro>
-        </div>, 
+        <'div'>
+            <'Primeiro'></'Primeiro'>
+        </'div'>, 
         document.getElementById('root')
     )
 
@@ -56,17 +60,17 @@ Branch voltada para a seção 02: Fundamentos React.
 * **ATENÇÃO!!**: extensão .jsx serve para a IDE eventualmente te ajudar a completar o arquivo e não necessariamente faz alguma diferença para o React.
 * **ATENÇÃO!!**: o React suporta tanto .js quanto .jsx, a única diferença entre as extensões é o que o React espera que você escreva dentro do arquivo.
 * Podemos definir um componente de duas maneiras :
-    * <Primeiro></Primeiro>
-    * <Primeiro />
+    * <'Primeiro'></'Primeiro'>
+    * <'Primeiro' />
 * Definir parâmetros pela tag do componente:
-    * No index.js: <Componente parametroUm = "valorUm" parametroDois = "valorDois" />
+    * No index.js: <'Componente' parametroUm = "valorUm" parametroDois = "valorDois" />
     * No arquivo do componente (exemplo: Componente.jsx): 
     function Componente(props) {
         return (
-            <div>
-                <h1>{ props.parametroUm }</h1>
-                <h2>{ props.parametroDois }</h2>
-            </div>
+            <'div'>
+                <'h1'>{ props.parametroUm }</'h1'>
+                <'h2'>{ props.parametroDois }</'h2'>
+            </'div'>
         )
     }
 * É possível passar o valor de um parâmetro tanto como string quanto como um valor numérico, apenas é necessário colocar o valor entre chaves. Exemplo: nota = {9.3}
@@ -81,16 +85,16 @@ Branch voltada para a seção 02: Fundamentos React.
 * Basicamente, uma maneira de exonerar as divs para resolver esse erro é utilizar o React.Fragment envelopando os elementos;
 * Exemplo 01:
     return (
-        <React.Fragment>
-            <h2></h2>
-            <p></p>
-        <React.Fragment>
+        <'React.Fragment'>
+            <'h2'></'h2'>
+            <'p'></'p'>
+        <'React.Fragment'>
     )
 * Exemplo 02:
     return (
         <>
-            <h2></h2>
-            <p></p>
+            <'h2'></'h2'>
+            <'p'></'p'>
         </>
     )
 * **ATENÇÃO!!**: em caso de necessidade de ter alguma propriedade envolvendo os elementos adjacentes, apenas o exemplo 01 funciona.
