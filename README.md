@@ -122,3 +122,25 @@ Branch voltada para a seção 02: Fundamentos React.
 ### Aula 20 - Componente Card #02
 
 * Apenas alterações CSS.
+
+### Aula 21 - Componente Card #03
+
+* **Definindo cores por parâmetro**
+    * No arquivo App.jsx:
+        <'Card' titulo="#04 - Desafio Aleatório" color="#080">
+            <'Aleatorio' min={0} max={10} />
+        </'Card'>
+    * No arquivo do componente Card.jsx:
+        const cardStyle = {
+            backgroundColor: props.color || "#cf5656",
+            borderColor: props.color || "#cf5656",
+        }
+
+        return (
+            <'div' className="Card" style={ cardStyle }>
+            <'div' className="Title">{props.titulo}</'div'>
+            <'div' className="Content">
+                { props.children }
+            </'div'>
+            </'div'>
+        );
