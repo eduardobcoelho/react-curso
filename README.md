@@ -99,3 +99,7 @@ Branch voltada para a seção 02: Fundamentos React.
 
 * Criando um componente App para importar todos os componentes criados;
 * Diminuindo o código da função principal de App para arrow function.
+
+### Aula 17 - Desafio Número Aleatório
+
+* Criar um novo componente aleatorio que vai ser passado um valor máximo e um valor mínimo e sempre que for dado um refresh na página mostrar um numero aleatório entre eles
