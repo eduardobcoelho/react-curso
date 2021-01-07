@@ -3,13 +3,13 @@ Branch voltada para a seção 02: Fundamentos React.
 
 # Anotações
 
-## Aula 06 - Introdução do Módulo
+### Aula 06 - Introdução do Módulo
 
-## Aula 07 - Criando Projeto
+### Aula 07 - Criando Projeto
 
 * Usando o npx digite o comando dentro da pasta desejada: npx create-react-app
 
-## Aula 08 - Exibindo String na Tela
+### Aula 08 - Exibindo String na Tela
 
 #### ReactDOM
 
@@ -21,18 +21,18 @@ Branch voltada para a seção 02: Fundamentos React.
     * const element = document.getElementById('root')
     * ReactDOM.render('Olá React!!!', element);
 
-## Aula 09 - Conhecendo JSX
+### Aula 09 - Conhecendo JSX
 
 * A partir da sintaxe JSX é possível simular um elemento HTML no JavaScript
 * É necessário importar o react: import React from 'react'
 * Exemplo:
     * const strongString = <strong>Olá React!!!</strong>
 
-## Aula 10 - Carregando CSS
+### Aula 10 - Carregando CSS
 
 * Importando o CSS no arquivo JavaScript Index: import './index.css'
 
-## Aula 11 - Primeiro Componente #01
+### Aula 11 - Primeiro Componente #01
 
 * Para uma função ficar disponível externamente ao arquivo escrito, é necessário exportá-la;
 * export default function nomeDaFuncao() {}
@@ -46,15 +46,15 @@ Branch voltada para a seção 02: Fundamentos React.
         document.getElementById('root')
     )
 
-## Aula 12 - Primeiro Componente #02
+### Aula 12 - Primeiro Componente #02
 
-* ATENÇÃO: Se você quiser retornar um elemento JSX identado em uma função, é importante colocar entre ()
+* **ATENÇÃO!!**: Se você quiser retornar um elemento JSX identado em uma função, é importante colocar entre ()
 
-## Aula 13 - Componente com Propriedade
+### Aula 13 - Componente com Propriedade
 
-* **ATENÇÃO**: Os componentes criados até então foram os componentes funcionais (baseados em função) - existem também os baseados em classe.
-* **ATENÇÃO**: extensão .jsx serve para a IDE eventualmente te ajudar a completar o arquivo e não necessariamente faz alguma diferença para o React.
-* **ATENÇÃO**: o React suporta tanto .js quanto .jsx, a única diferença entre as extensões é o que o React espera que você escreva dentro do arquivo.
+* **ATENÇÃO!!**: Os componentes criados até então foram os componentes funcionais (baseados em função) - existem também os baseados em classe.
+* **ATENÇÃO!!**: extensão .jsx serve para a IDE eventualmente te ajudar a completar o arquivo e não necessariamente faz alguma diferença para o React.
+* **ATENÇÃO!!**: o React suporta tanto .js quanto .jsx, a única diferença entre as extensões é o que o React espera que você escreva dentro do arquivo.
 * Podemos definir um componente de duas maneiras :
     * <Primeiro></Primeiro>
     * <Primeiro />
@@ -70,3 +70,27 @@ Branch voltada para a seção 02: Fundamentos React.
         )
     }
 * É possível passar o valor de um parâmetro tanto como string quanto como um valor numérico, apenas é necessário colocar o valor entre chaves. Exemplo: nota = {9.3}
+
+### Aula 14 - Propriedades são Somente Leitura
+
+* **ATENÇÃO!!**: quando um conjunto de propriedades são passadas para um componente, estas propriedades são **SOMENTE** leitura, não é possível alterá-las.
+
+### Aula 15 - React Fragment
+
+* Parsing error: componentes adjacentes precisam ser retornados havendo uma tag envolvendo os dois;
+* Basicamente, uma maneira de exonerar as divs para resolver esse erro é utilizar o React.Fragment envelopando os elementos;
+* Exemplo 01:
+    return (
+        <React.Fragment>
+            <h2></h2>
+            <p></p>
+        <React.Fragment>
+    )
+* Exemplo 02:
+    return (
+        <>
+            <h2></h2>
+            <p></p>
+        </>
+    )
+* **ATENÇÃO!!**: em caso de necessidade de ter alguma propriedade envolvendo os elementos adjacentes, apenas o exemplo 01 funciona.
