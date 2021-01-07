@@ -103,3 +103,9 @@ Branch voltada para a seção 02: Fundamentos React.
 ### Aula 17 - Desafio Número Aleatório
 
 * Criar um novo componente aleatorio que vai ser passado um valor máximo e um valor mínimo e sempre que for dado um refresh na página mostrar um numero aleatório entre eles
+
+### Aula 18 - Desafio Número Aleatório (Resposta)
+
+* Destructuring:
+    * const { min, max } = props;
+    * Onde props = { min: 0, max: 10 }
