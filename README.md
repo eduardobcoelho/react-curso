@@ -94,3 +94,8 @@ Branch voltada para a seção 02: Fundamentos React.
         </>
     )
 * **ATENÇÃO!!**: em caso de necessidade de ter alguma propriedade envolvendo os elementos adjacentes, apenas o exemplo 01 funciona.
+
+### Aula 16 - Componente App
+
+* Criando um componente App para importar todos os componentes criados;
+* Diminuindo o código da função principal de App para arrow function.
