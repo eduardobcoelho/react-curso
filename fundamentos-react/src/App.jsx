@@ -10,6 +10,6 @@ export default () => (
     <Fragmento />
     <ComParametro titulo="Situação do Aluno" aluno="Eduardo" nota={9.3} />
     <Primeiro></Primeiro>
-    <Aleatorio min ={0} max={10} />
+    <Aleatorio min={0} max={10} />
   </div>
 );
