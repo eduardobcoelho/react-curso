@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function ComParametro(props) {
+export default (props) => {
   const status = props.nota >= 7 ? "Aprovado" : "Recuperação";
   return (
     <>
@@ -11,4 +11,4 @@ export default function ComParametro(props) {
       </p>
     </>
   );
-}
+};
