@@ -1,4 +1,10 @@
-# Curso de React
-Repositório voltado para os meus conhecimentos e projetos adquiridos com o curso sobre a biblioteca React
+# Fundamentos React
+Branch voltada para a seção 02: Fundamentos React.
 
-link do curso: **https://www.udemy.com/course/react-redux-pt/**
+# Anotações
+
+## Aula 06 - Introdução do Módulo
+
+## Aula 07 - Criando Projeto
+
+* Usando o npx digite o comando dentro da pasta desejada: npx create-react-app
