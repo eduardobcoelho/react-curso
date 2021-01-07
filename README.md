@@ -26,7 +26,7 @@ Branch voltada para a seção 02: Fundamentos React.
 * A partir da sintaxe JSX é possível simular um elemento HTML no JavaScript
 * É necessário importar o react: import React from 'react'
 * Exemplo:
-    * const strongString = <strong>Olá React!!!</strong>
+    * const strongString = <[tag:strong]>Olá React!!!</strong>
 
 ### Aula 10 - Carregando CSS
 
