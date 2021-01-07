@@ -21,9 +21,31 @@ Branch voltada para a seção 02: Fundamentos React.
     * const element = document.getElementById('root')
     * ReactDOM.render('Olá React!!!', element);
 
-## Aula 08 - Conhecendo JSX
+## Aula 09 - Conhecendo JSX
 
 * A partir da sintaxe JSX é possível simular um elemento HTML no JavaScript
 * É necessário importar o react: import React from 'react'
 * Exemplo:
     * const strongString = <strong>Olá React!!!</strong>
+
+## Aula 10 - Carregando CSS
+
+* Importando o CSS no arquivo JavaScript Index: import './index.css'
+
+## Aula 11 - Primeiro Componente #01
+
+* Para uma função ficar disponível externamente ao arquivo escrito, é necessário exportá-la;
+* export default function nomeDaFuncao() {}
+* É permitido pela sintaxe JSX referenciar um componente importado como se fosse uma tag
+* Exemplo:
+    * import Primeiro from './components/basicos/Primeiro'
+    * ReactDOM.render(
+        <div>
+            <Primeiro></Primeiro>
+        </div>, 
+        document.getElementById('root')
+    )
+
+## Aula 12 - Primeiro Componente #02
+
+* ATENÇÃO: Se você quiser retornar um elemento JSX identado em uma função, é importante colocar entre ()

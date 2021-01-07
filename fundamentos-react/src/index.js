@@ -1,11 +1,12 @@
+import './index.css'
 import ReactDOM from 'react-dom'
 import React from 'react'
 
-const strongString = <strong>Olá React!!!</strong>
+import Primeiro from './components/basicos/Primeiro'
 
 ReactDOM.render(
     <div>
-        { strongString }
-    </div>, 
+        <Primeiro></Primeiro>
+    </div>,
     document.getElementById('root')
 )
