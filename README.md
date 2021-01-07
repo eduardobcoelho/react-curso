@@ -118,3 +118,7 @@ Branch voltada para a seção 02: Fundamentos React.
 
 * Para definirmos a classe de uma tag na sintaxe JSX não usamos o class="" e sim o className="";
 * Para passarmos informações dos "filhos" de um elemento JSX é necessário colocarmos no arquivo do componente, dentro da tag desejada, um { props.children }.
+
+### Aula 20 - Componente Card #02
+
+* Apenas alterações CSS.
