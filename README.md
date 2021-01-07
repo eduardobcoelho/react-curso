@@ -49,3 +49,24 @@ Branch voltada para a seção 02: Fundamentos React.
 ## Aula 12 - Primeiro Componente #02
 
 * ATENÇÃO: Se você quiser retornar um elemento JSX identado em uma função, é importante colocar entre ()
+
+## Aula 13 - Componente com Propriedade
+
+* **ATENÇÃO**: Os componentes criados até então foram os componentes funcionais (baseados em função) - existem também os baseados em classe.
+* **ATENÇÃO**: extensão .jsx serve para a IDE eventualmente te ajudar a completar o arquivo e não necessariamente faz alguma diferença para o React.
+* **ATENÇÃO**: o React suporta tanto .js quanto .jsx, a única diferença entre as extensões é o que o React espera que você escreva dentro do arquivo.
+* Podemos definir um componente de duas maneiras :
+    * <Primeiro></Primeiro>
+    * <Primeiro />
+* Definir parâmetros pela tag do componente:
+    * No index.js: <Componente parametroUm = "valorUm" parametroDois = "valorDois" />
+    * No arquivo do componente (exemplo: Componente.jsx): 
+    function Componente(props) {
+        return (
+            <div>
+                <h1>{ props.parametroUm }</h1>
+                <h2>{ props.parametroDois }</h2>
+            </div>
+        )
+    }
+* É possível passar o valor de um parâmetro tanto como string quanto como um valor numérico, apenas é necessário colocar o valor entre chaves. Exemplo: nota = {9.3}
