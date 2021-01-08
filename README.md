@@ -147,4 +147,13 @@ Branch voltada para a seção 02: Fundamentos React.
     
 ### Aula 22 - Componente com filho #01
 
-* 
+* O parâmetro do componente pai não é automaticamente passado para o componente filho;
+* Maneira mais trivial:
+    * Arquivo App.jsx: <'Familia' nomeMae="Barros" nomePai="Coelho" />
+    * Arquivo Familia.jsx: <'FamiliaMembro' nome="Luiz Eduardo" nomeMae={props.nomeMae} nomePai={props.nomePai} />
+* Operador Spread: {...props}:
+    * Todos os atributos serão passados para o componente filho;
+    * Exemplo: 
+        * Arquivo App.jsx: <'Familia' nomeMae="Barros" nomePai="Coelho" />
+        * Arquivo Familia.jsx: <'FamiliaMembro' {...props} />
+        * Neste exemplo, com o operador spread, os atributos nomeMae e nomePai serão passados para o componente filho FamiliaMembro.

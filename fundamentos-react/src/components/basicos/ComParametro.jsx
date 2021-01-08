@@ -1,13 +1,14 @@
 import React from "react";
 
 export default (props) => {
+  const { titulo, aluno, nota } = props;
   const status = props.nota >= 7 ? "Aprovado" : "Recuperação";
   return (
     <>
-      <h2>{props.titulo}</h2>
+      <h2>{titulo}</h2>
       <p>
-        Aluno: <strong>{props.aluno}</strong>, Nota:{" "}
-        <strong>{props.nota}</strong>, Situação: <strong>{status}</strong>
+        Aluno: <strong>{aluno}</strong>, Nota: <strong>{nota}</strong>,
+        Situação: <strong>{status}</strong>
       </p>
     </>
   );
