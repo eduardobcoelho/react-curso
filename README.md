@@ -182,3 +182,7 @@ Branch voltada para a seção 02: Fundamentos React.
 * Atributo **key**: a partir da chave, o React será capaz de detectar as eventuais mudanças que possam acontecer;
 * Supomos que um determinado elemento de uma lista teve sua nota alterada e você quer que isso reflita na interface gráfica, o atributo key facilita para o React conseguir rapidamente encontrar qual elemento foi alterado;
 * **ATENÇÃO!!!**O atributo key deve ser único.
+
+### Aula 25 - Desafio Repetição
+
+* Criar, na pasta de dados, um arquivo produtos.js com três atributos (id, nomeProduto e precoProduto) e na pasta repetição um arquivo TabelaProdutos.jsx com uma tabela mostrando todos os produtos. 
