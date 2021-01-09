@@ -176,3 +176,9 @@ Branch voltada para a seção 02: Fundamentos React.
         * **{filhos.map((child, i) => {**
             **return cloneElement(child, {...props, key:i })**
         **})}**
+
+### Aula 24 - Repetição
+
+* Atributo **key**: a partir da chave, o React será capaz de detectar as eventuais mudanças que possam acontecer;
+* Supomos que um determinado elemento de uma lista teve sua nota alterada e você quer que isso reflita na interface gráfica, o atributo key facilita para o React conseguir rapidamente encontrar qual elemento foi alterado;
+* **ATENÇÃO!!!**O atributo key deve ser único.
