@@ -15,7 +15,7 @@ export default () => (
   <div className="App">
     <h1></h1>
     <div className="Cards">
-      <Card titulo="#07 - Desafio Repetição" color="#FF4C65">
+      <Card titulo="#07 - Desafio Repetição" color="#6B36C8">
         <TabelaProdutos />
       </Card>
 
