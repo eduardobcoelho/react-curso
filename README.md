@@ -157,3 +157,22 @@ Branch voltada para a seção 02: Fundamentos React.
         * Arquivo App.jsx: <'Familia' nomeMae="Barros" nomePai="Coelho" />
         * Arquivo Familia.jsx: <'FamiliaMembro' {...props} />
         * Neste exemplo, com o operador spread, os atributos nomeMae e nomePai serão passados para o componente filho FamiliaMembro.
+
+### Aula 23 - Componente com filho #02
+
+* **React.cloneElement()**:
+    * Clona um elemento;
+    * Parametros: além de passar o elemento, também se pode passar, como segundo parâmetro, props para este elemento.
+    * Exemplo 01 (Com apenas um elemento filho): 
+        * **{React.cloneElement(props.children)}** --> Está clonando o elemento que está em props do elemento filho;
+        * **{cloneElement(props.children, {...props})}** --> Está passando as propriedades do elemento pai, pro filho que está sendo clonado. 
+    * Exemplo 02 (Com vários elementos filho):
+        * **{React.Children.map(props.children)}** --> O map() recebe os elementos filhos como primeiro parâmetro;
+        * **{React.Children.map(props.children), child => {**
+            **return React.cloneElement(child, {...props})**
+        **}** --> Como segundo parâmetro, o map() recebe uma função com um elemento child (filho atual/um dos filhos) e esta função retorna um clone deste elemento filho com as propriedades do pai.
+    * Exemplo mais enxuto: 
+        * Variável com os filhos: let filhos = props.children;
+        * **{filhos.map((child, i) => {**
+            **return cloneElement(child, {...props, key:i })**
+        **})}**
