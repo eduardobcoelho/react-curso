@@ -186,3 +186,5 @@ Branch voltada para a seção 02: Fundamentos React.
 ### Aula 25 - Desafio Repetição
 
 * Criar, na pasta de dados, um arquivo produtos.js com três atributos (id, nomeProduto e precoProduto) e na pasta repetição um arquivo TabelaProdutos.jsx com uma tabela mostrando todos os produtos. 
+
+### Aula 26 - Desafio Repetição (Resposta)
