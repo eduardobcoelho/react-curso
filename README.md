@@ -194,10 +194,10 @@ Branch voltada para a seção 02: Fundamentos React.
 *  **OBS(Comparação estrita):** quando usamos "===" queremos comparar não somente o valor como também o tipo.
     const isPar = props.numero % 2 === 0
         return (
-            <div>
+            <'div'>
                 { isPar ? 
-                    <span>Par</span> : <span>Ímpar</span>
+                    <'span'>Par</'span'> : <'span'>Ímpar</'span'>
                 }
-            </div>
+            </'div'>
         )
 * O código acima exemplifica o uso de uma condicional para renderizar um elemento JSX na tela.

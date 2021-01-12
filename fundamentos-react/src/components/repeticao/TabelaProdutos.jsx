@@ -17,7 +17,7 @@ export default (props) => {
 
   return (
     <div className="TabelaProdutos">
-      <table>
+      <table border="1">
         <thead>
           <tr>
             <th>ID</th>

@@ -1,0 +1,12 @@
+.TabelaNumeroExtra table {
+    width: 100%;
+}
+
+.TabelaNumeroExtra thead {
+    background-color: #982395;
+    color: #fff;
+}
+
+.TabelaNumeroExtra .estiloTR {
+    background-color: #ddd;
+}
