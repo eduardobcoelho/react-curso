@@ -188,3 +188,16 @@ Branch voltada para a seção 02: Fundamentos React.
 * Criar, na pasta de dados, um arquivo produtos.js com três atributos (id, nomeProduto e precoProduto) e na pasta repetição um arquivo TabelaProdutos.jsx com uma tabela mostrando todos os produtos. 
 
 ### Aula 26 - Desafio Repetição (Resposta)
+
+### Aula 27 - Renderização Condicional #01
+
+*  **OBS(Comparação estrita):** quando usamos "===" queremos comparar não somente o valor como também o tipo.
+    const isPar = props.numero % 2 === 0
+        return (
+            <div>
+                { isPar ? 
+                    <span>Par</span> : <span>Ímpar</span>
+                }
+            </div>
+        )
+* O código acima exemplifica o uso de uma condicional para renderizar um elemento JSX na tela.

@@ -2,15 +2,14 @@ import "./TabelaProdutos.css";
 import React from "react";
 import produtos from "../../data/produtos";
 
-export default () => {
+export default (props) => {
   const produtosList = produtos.map((produto, i) => {
     return (
-      <tr key={produto.id} className={i % 2 == 0 ? "Par" : ""}>
+      <tr key={produto.id} className={i % 2 === 0 ? "Par" : ""}>
         <td>{produto.id}</td>
         <td>{produto.nomeProduto}</td>
         <td>
-          {"R$"}
-          {produto.precoProduto}
+          {"R$"} {produto.precoProduto}
         </td>
       </tr>
     );
