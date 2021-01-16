@@ -201,3 +201,16 @@ Branch voltada para a seção 02: Fundamentos React.
             </'div'>
         )
 * O código acima exemplifica o uso de uma condicional para renderizar um elemento JSX na tela.
+
+## Renderização Condicional #02
+
+* Condicional a partir de um componente;
+* Componente If.js:
+    export default (props) => {
+    if (props.test) {
+        return props.children;
+    } else {
+        return false;
+    }
+    };
+* Basicamente, o componente pega uma expressão e verifica se é true. Caso seja true o componente retorna as propriedades do seu filho, caso contrário, retorna false (nada).
